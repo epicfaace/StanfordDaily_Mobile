@@ -1,6 +1,4 @@
 {
-  "name": "Stanford Daily",
-  "displayName": "Stanford Daily",
   "expo": {
     "description": "Stanford Daily Mobile App",
     "slug": "StanfordDaily",
@@ -26,11 +24,22 @@
     ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.Stanford.Daily.App"
+      "bundleIdentifier": "com.Stanford.Daily.App",
+      "publishBundlePath": "ios/stanforddaily/Supporting/shell-app.bundle",
+      "publishManifestPath": "ios/stanforddaily/Supporting/shell-app-manifest.json"
     },
     "android": {
       "package": "com.Stanford.Daily.App",
-      "versionCode": 3
-    }
+      "versionCode": 3,
+      "publishBundlePath": "android/app/src/main/assets/shell-app.bundle",
+      "publishManifestPath": "android/app/src/main/assets/shell-app-manifest.json"
+    },
+    "name": "StanfordDaily",
+    "isDetached": true,
+    "detach": {
+      "iosExpoViewUrl": "https://s3.amazonaws.com/exp-exponent-view-code/ios-v2.8.4-sdk30.0.0-3de13133-1adc-4ba1-8569-a84011e570b4.tar.gz",
+      "androidExpoViewUrl": "https://s3.amazonaws.com/exp-exponent-view-code/android-v2.8.1-sdk30.0.0-271c32ab-0715-4dfb-8270-ecead3679bb4.tar.gz"
+    },
+    "scheme": "expc01c33a66c5b447e811492647043f791"
   }
 }
